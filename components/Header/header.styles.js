@@ -2,7 +2,7 @@ import { makeStyles } from '@mui/styles';
 
 export const useStyles = makeStyles({
   appbar: {
-    background: 'rgba(0,0,0,0.1)',
+    // background: 'rgba(0,0,0,0.1)',
     backgroundColor: 'rgba(0,0,0,0.1)',
   },
   toolbar: {
@@ -31,10 +31,6 @@ export const useStyles = makeStyles({
     '@media screen and (min-width: 768px)': {
       justifyContent: 'space-evenly',
     },
-
-    // '& a ': {
-    //   marginRight: '2rem ',
-    // },
     '& a:hover': {
       color: 'red',
     },
@@ -42,7 +38,6 @@ export const useStyles = makeStyles({
 
   headerIcon: {
     flex: '0.1',
-    // marginRight: '5rem',
     '& svg': {
       marginRight: '0.2rem',
     },
@@ -50,7 +45,10 @@ export const useStyles = makeStyles({
       color: 'red',
       cursor: 'pointer',
     },
+  },
 
-    // border: '1px solid lightblue',
+  pageheading: {
+    display: 'flex',
+    justifyContent: 'center',
   },
 });

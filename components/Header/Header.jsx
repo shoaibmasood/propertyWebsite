@@ -7,11 +7,13 @@ import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { useStyles } from './header.style';
 import DropDownMenu from '../utils/DropDownMenu/DropDownMenu';
+import { useStyles } from './header.styles';
+import { Typography } from '@mui/material';
 
-const Header = () => {
-  const { appbar, toolbar, logoImage, headerlink, headerIcon } = useStyles();
+const Header = ({ pageHeading }) => {
+  const { appbar, toolbar, logoImage, headerlink, headerIcon, pageheading } =
+    useStyles();
 
   return (
     <AppBar position="static" className={appbar}>
@@ -22,19 +24,7 @@ const Header = () => {
         <Box className={headerlink}>
           <Link href="/">HOME</Link>
           <Link href="/about">ABOUT US</Link>
-
-          {/* <span className={servicesLink}>
-              SERVICES
-              <ArrowDropDownIcon />
-            </span>
-            <div className={dropdownContent}>
-              <Link href="/sellyourhome">-Sell your Home</Link>
-              <Link href="/sellyourhome">-Buy A Home</Link>
-              <Link href="/sellyourhome">-Private Lender</Link>
-            </div> */}
           <DropDownMenu />
-
-          {/* <Link href="/services"> SERVICES</Link> */}
           <Link href="/contact-us">CONTACT US</Link>
           <Link href="/home-for-sale">HOME FOR SALE </Link>
         </Box>
@@ -43,6 +33,11 @@ const Header = () => {
           <LinkedInIcon />
         </Box>
       </Toolbar>
+      {pageHeading && (
+        <Typography variant="h5" className={pageheading}>
+          {pageHeading}
+        </Typography>
+      )}
     </AppBar>
   );
 };

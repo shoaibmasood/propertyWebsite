@@ -4,7 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-// import { useStyles } from './DropDownMenu.styles';
+import { useStyles } from './DropDownMenu.styles';
 
 export default function DropDownMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -17,11 +17,11 @@ export default function DropDownMenu() {
     setAnchorEl(null);
   };
 
-  // const { dropdownBtn, menu } = useStyles();
+  const { dropdownBtn, menu } = useStyles();
   return (
     <div>
       <Button
-        // className={dropdownBtn}
+        className={dropdownBtn}
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
@@ -31,7 +31,7 @@ export default function DropDownMenu() {
       </Button>
       <Menu
         id="simple-menu"
-        // className={menu}
+        className={menu}
         anchorEl={anchorEl}
         elevation={8}
         getContentAnchorEl={null}
