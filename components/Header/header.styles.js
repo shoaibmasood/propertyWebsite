@@ -4,6 +4,8 @@ export const useStyles = makeStyles({
   appbar: {
     // background: 'rgba(0,0,0,0.1)',
     backgroundColor: 'rgba(0,0,0,0.1)',
+    position: 'absolute',
+    zIndex: 555,
   },
   toolbar: {
     display: 'flex',
