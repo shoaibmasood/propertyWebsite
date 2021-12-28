@@ -1,12 +1,14 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
 function Layout({ children }) {
   return (
-    <>
+    <div style={{ position: 'relative' }}>
       <Header />
-      <main>{children}</main>
-    </>
+      {children}
+      <Footer />
+    </div>
   );
 }
 
