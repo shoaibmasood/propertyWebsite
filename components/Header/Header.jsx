@@ -26,7 +26,7 @@ const Header = ({ pageHeading }) => {
           <Link href="/about">ABOUT US</Link>
           <DropDownMenu />
           <Link href="/contact-us">CONTACT US</Link>
-          <Link href="/home-for-sale">HOME FOR SALE </Link>
+          <Link href="/home-for-sale">HOMES FOR SALE </Link>
         </Box>
         <Box className={headerIcon}>
           <FacebookIcon />

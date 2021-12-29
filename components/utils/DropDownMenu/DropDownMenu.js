@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import Link from 'next/link';
 
 import { useStyles } from './DropDownMenu.styles';
 
@@ -47,9 +48,15 @@ export default function DropDownMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>-Sell your Home</MenuItem>
-        <MenuItem onClick={handleClose}>-Buy A Home</MenuItem>
-        <MenuItem onClick={handleClose}>-Private Lender</MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href="/sell-your-home">-Sell your Home</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href="/buy-a-home">-Buy A Home</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href="/private-lender">-Private Lender</Link>
+        </MenuItem>
       </Menu>
     </div>
   );
