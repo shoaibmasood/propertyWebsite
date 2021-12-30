@@ -7,7 +7,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import DropDownMenu from '../utils/DropDownMenu/DropDownMenu';
+import DropDownMenu from '../Common/DropDownMenu/DropDownMenu';
 import { useStyles } from './header.styles';
 import { Typography } from '@mui/material';
 
