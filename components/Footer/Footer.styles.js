@@ -5,9 +5,22 @@ export const useStyles = makeStyles({
     backgroundColor: 'black',
     color: 'white',
     display: 'flex',
-    justifyContent: 'space-evenly',
+    '@media screen and (max-width: 450px)': {
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+
     paddingTop: '3rem',
     paddingBottom: '0.5rem',
+    '@media screen and (min-width: 768px)': {
+      justifyContent: 'space-evenly',
+    },
+    '@media screen and (min-width: 1024px)': {
+      justifyContent: 'space-around',
+    },
+    '@media screen and (min-width: 1400px)': {
+      justifyContent: 'space-evenly',
+    },
   },
   footerLink: {
     display: 'flex',
@@ -18,7 +31,7 @@ export const useStyles = makeStyles({
   footerLinkCol1: {
     display: 'flex',
     flexDirection: 'column',
-    marginRight: '3.5rem',
+    marginRight: '3rem',
     '& a': {
       marginBottom: '0.5rem',
     },
