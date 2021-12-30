@@ -8,7 +8,7 @@ function Layout({ children, router: { route }, ...props }) {
     <div style={{ position: 'relative' }}>
       <Header pageHeading={PAGEHEADING[route]} {...props} />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
