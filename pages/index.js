@@ -4,6 +4,7 @@ import data from '../public/data.json';
 import { Box, Grid, Typography } from '@mui/material';
 import HomeDetails from '../components/Common/HomeDetails/HomeDetails';
 import styles from '../styles/Home.module.css';
+import ParallaxSection from '../components/Common/ParallaxSection/ParallaxSection';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         </Grid>
       </Box>
       <HomeDetails />
+      <ParallaxSection />
     </>
   );
 }
