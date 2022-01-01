@@ -5,8 +5,19 @@ import { Box, Grid, Typography } from '@mui/material';
 import HomeDetails from '../components/Common/HomeDetails/HomeDetails';
 import styles from '../styles/Home.module.css';
 import ParallaxSection from '../components/Common/ParallaxSection/ParallaxSection';
+import Testimonial from '../components/Testimonial/Testimonial';
+import Slider from 'react-slick';
+// import '~slick-carousel/slick/slick-theme.css';
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
       <div className={styles.container}>
@@ -30,6 +41,15 @@ export default function Home() {
       </Box>
       <HomeDetails />
       <ParallaxSection />
+      <Testimonial />
+      {/* <Slider {...settings}>
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+      </Slider> */}
     </>
   );
 }
