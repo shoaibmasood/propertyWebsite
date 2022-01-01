@@ -18,5 +18,17 @@
 
       "description": "Learn about becoming a private lender as an alternative way to participate in the real estate market. We buy and sell a large number of properties and are always looking for short-term private lenders who are excited to loan money at attractive rates secured by a mortgage or deed of trust."
     }
+  ],
+
+  "testimonials": [
+    {
+    "name": "John Doe",
+    "comments": "I bought my last investment property through this company! They were fast and fair and very good at communication so we always knew where we were in the buying process. I highly recommend working with them!"
+    },
+    {
+      "name": "John Doe",
+      "comments": "I bought my last investment property through this company! They were fast and fair and very good at communication so we always knew where we were in the buying process. I highly recommend working with them!"
+      }
   ]
+
 }

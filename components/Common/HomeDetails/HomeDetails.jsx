@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
-import HomeIcon from '@mui/icons-material/Home';
 import { FaHandshake, FaQuestion, FaHome } from 'react-icons/fa';
 import { useStyles } from './HomeDetails.styles';
 
