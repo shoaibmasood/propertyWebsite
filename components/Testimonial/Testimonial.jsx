@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
+import { BsArrowRightCircleFill, BsArrowLeftCircleFill } from 'react-icons/bs';
 import { Box, Grid, Typography } from '@mui/material';
 import data from '../../public/data.json';
 import Slider from 'react-slick';
@@ -14,11 +15,13 @@ function Testimonial() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <BsArrowRightCircleFill />,
+    prevArrow: <BsArrowLeftCircleFill />,
   };
   return (
     <Box className={testimonialContainer}>
       <Grid container justifyContent="center">
-        <Slider {...settings} style={{ maxWidth: '50rem' }}>
+        <Slider {...settings} style={{ maxWidth: '48rem' }}>
           {data.testimonials.map(({ name, comments }, index) => (
             <Grid item key={index}>
               <Box className={testimonialIcon}>
@@ -30,13 +33,10 @@ function Testimonial() {
                 maxWidth="46rem"
                 className={testimonialContent}
               >
-                I bought my last investment property through this company! They
-                were fast and fair and very good at communication so we always
-                knew where we were in the buying process. I highly recommend
-                working with them!
+                {comments}
               </Typography>
               <Typography variant="body1" align="center">
-                Jhon Doe
+                {name}
               </Typography>
             </Grid>
           ))}
