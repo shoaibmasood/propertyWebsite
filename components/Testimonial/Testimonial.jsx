@@ -7,8 +7,12 @@ import Slider from 'react-slick';
 import { useStyles } from './Testimonial.styles';
 
 function Testimonial() {
-  const { testimonialContainer, testimonialIcon, testimonialContent } =
-    useStyles();
+  const {
+    testimonialContainer,
+    testimonialSlider,
+    testimonialIcon,
+    testimonialContent,
+  } = useStyles();
   const settings = {
     dots: true,
     infinite: true,
@@ -20,8 +24,8 @@ function Testimonial() {
   };
   return (
     <Box className={testimonialContainer}>
-      <Grid container justifyContent="center">
-        <Slider {...settings} style={{ maxWidth: '48rem' }}>
+      <Grid container justifyContent="center" className={testimonialSlider}>
+        <Slider {...settings}>
           {data.testimonials.map(({ name, comments }, index) => (
             <Grid item key={index}>
               <Box className={testimonialIcon}>
