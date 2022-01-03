@@ -16,4 +16,48 @@ export const useStyles = makeStyles({
       minHeight: '30vh',
     },
   },
+
+  aboutContainer: {
+    marginTop: '3.9rem',
+    marginBottom: '3.9rem',
+  },
+
+  aboutHeading1: {
+    marginBottom: '1.25rem',
+  },
+  aboutDesc1: {
+    marginBottom: '1.25rem',
+  },
+
+  aboutHeading2: {
+    marginTop: '3.125rem',
+    marginBottom: '1.25rem',
+  },
+  aboutDesc2: {
+    marginBottom: '1.25rem',
+  },
+  aboutCardsContainer: {
+    marginTop: '2rem',
+    marginBottom: '2rem',
+  },
+  aboutRealStateContainer: {
+    marginTop: '3.9rem',
+    marginBottom: '1.25rem',
+  },
+
+  aboutHeading3: {
+    marginBottom: '1.25rem',
+  },
+  aboutHeading4: {
+    marginBottom: '1.25rem',
+  },
+  aboutDesc4: {
+    marginBottom: '1.25rem',
+  },
+  aboutBtn: {
+    backgroundColor: '#ff6161',
+    // '& hover': {
+    //   backgroundColor: '#ce0606',
+    // },
+  },
 });
