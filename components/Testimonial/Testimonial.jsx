@@ -19,6 +19,7 @@ function Testimonial() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    currentSlide:1,
     nextArrow: <BsArrowRightCircleFill />,
     prevArrow: <BsArrowLeftCircleFill />,
   };
