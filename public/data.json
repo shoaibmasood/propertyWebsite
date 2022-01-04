@@ -1,0 +1,45 @@
+{
+  "services": [
+    {
+      "title": "Sell Your Home",
+      "route": "/sell-your-home",
+
+      "description": "As one of the area’s most active homebuyers, we are confident that we can work around your timeline and goals for selling your house. We can make you a fair, cash offer and are willing to buy your house in its as-is condition. We will work hand in hand with you every step of the way to ensure a successful, seamless transaction."
+    },
+    {
+      "title": "Buy A Home",
+      "route": "/buy-a-home",
+
+      "description": "We are one of the area’s most active home sellers and, with our large inventory of properties, there’s no doubt that we can work around your timeline and goals for buying your next home. We work hard to ensure that the buying process is straightforward, fast, efficient, and seamless."
+    },
+    {
+      "title": "Private Lending",
+      "route": "/private-lending",
+
+      "description": "Learn about becoming a private lender as an alternative way to participate in the real estate market. We buy and sell a large number of properties and are always looking for short-term private lenders who are excited to loan money at attractive rates secured by a mortgage or deed of trust."
+    }
+  ],
+
+  "testimonials": [
+    {
+    "name": "John Doe",
+    "comments": "I bought my last investment property through this company! They were fast and fair and very good at communication so we always knew where we were in the buying process. I highly recommend working with them!"
+    },
+    {
+      "name": "John Doe",
+      "comments": "I bought my last investment property through this company! They were fast and fair and very good at communication so we always knew where we were in the buying process. I highly recommend working with them!"
+      }
+  ],
+
+  "aboutUs":{
+    "heading1": "WHY ICONIC PROPERTIES?",
+    "desc1": " Iconic Properties is a real estate solutions company located in San Mateo, CA that specializes in buying and selling homes. We are experts at finding solutions for people who are in the market to buy or sell their own home or investment property. Our diverse team has experience with all types of buying and selling scenarios, and we understand how to make every transaction simple and stress free. We own and sell our homes, and are confident that we have something to meet the needs of every buyer. We are also well versed in most types of home sales and are certain that we can find a win-win solution for every seller, whether it be a traditional or creative selling solution.",
+    "heading2":  "OUR TEAM",
+    "desc2": "With a wealth of experience in buying and selling homes under our belts, our team and network of real estate experts have handled some of the most complicated real estate transactions on the market today. Whether you’re looking to sell your existing home or investment property, or are looking to buy your forever home or a new investment, our goal is to find a solution that works for both of us. We approach every transaction with the utmost professionalism and care and are dedicated to closing your transaction in the way that’s best for you.",
+    "heading3": "WE ARE A REAL ESTATE INVESTING COMPANY",
+    "desc3": "Our company buys, sells, and rents homes. We will not be acting as your real estate agent or broker if we buy your house, sell you a house, or rent a home to you. We are excited about working with you directly OR with your agent or broker if you are currently represented by one. We are focused on improving neighborhoods and redeveloping the areas where we work. If you have additional questions on agencies, please contact your local real estate commission.",
+    "heading4": "WHAT MAKES US DIFFERENT",
+    "desc4": "We embrace technology because it can streamline and automate our real estate transactions. We use a state-of-the-art business management system, keeping our business extremely organized and efficient so that we’re able to spend less time shuffling paperwork and more time finding the right solutions for you."
+  }
+
+}
