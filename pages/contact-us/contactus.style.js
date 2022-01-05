@@ -16,4 +16,24 @@ export const useStyles = makeStyles({
       minHeight: '30vh',
     },
   },
+  contactusContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    padding: '1.56rem 3.125rem',
+  },
+  contactusMap: {
+    width: '100%',
+    height: '40vh',
+  },
+  contactusBtnContanier: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  contactusBtn: {
+    backgroundColor: '#ff6161',
+    marginTop: '1.5rem',
+    '&:hover': {
+      backgroundColor: '#ce0606',
+    },
+  },
 });
