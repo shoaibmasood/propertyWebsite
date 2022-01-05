@@ -24,7 +24,6 @@ export const useStyles = makeStyles({
         maxWidth: '48rem',
       },
     },
-    // maxWidth: '48rem',
   },
   testimonialIcon: {
     display: 'flex',
