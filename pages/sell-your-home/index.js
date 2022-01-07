@@ -7,7 +7,25 @@ function SellYourHome() {
   return (
     <div>
       <Box className={sellYourHomeBanner}></Box>
-      <Grid>hello</Grid>
+      {/* ----------------TESTING--------------  */}
+      {/* <div>
+        <h1>{data.services[0].pageTitle}</h1>
+        {data.services[0].pageDescription.map((desc) => {
+          return (
+            <>
+              {" "}
+              <h3>{desc.subHeading}</h3>
+              {desc.paragraphs.map((para) => {
+                return (
+                  <p>
+                    {para}
+                    <br />
+                  </p>
+                )
+              })}
+            </>
+          )})}
+        </div> */}
     </div>
   );
 }
