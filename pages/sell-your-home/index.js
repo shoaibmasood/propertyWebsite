@@ -1,14 +1,16 @@
-import { Box, Grid } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
+import ServicesLayout from '../../components/Common/ServicesLayout/ServicesLayout';
+import data from '../../public/data.json';
 import { useStyles } from './sellyourhome.style';
 
 function SellYourHome() {
   const { sellYourHomeBanner } = useStyles();
   return (
-    <div>
+    <Box>
       <Box className={sellYourHomeBanner}></Box>
-      <Grid>hello</Grid>
-    </div>
+      <ServicesLayout pageContent={data.services[0]} />
+    </Box>
   );
 }
 
