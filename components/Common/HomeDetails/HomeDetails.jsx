@@ -9,12 +9,7 @@ function HomeDetails() {
 
   return (
     <Box className={detailsContainer}>
-      <Grid
-        container
-        // lg={12}
-        columnSpacing={5}
-        justifyContent="center"
-      >
+      <Grid container columnSpacing={5} justifyContent="center">
         <Grid item>
           <Box className={iconsDetails}>
             <FaQuestion />

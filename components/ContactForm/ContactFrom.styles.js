@@ -16,7 +16,6 @@ export const useStyles = makeStyles({
   drawer: {
     '& .MuiPaper-root': {
       marginTop: '7rem',
-      // height: '61vh',
       width: '35vw',
       '@media screen and (max-width: 780px)': {
         width: '60vw',

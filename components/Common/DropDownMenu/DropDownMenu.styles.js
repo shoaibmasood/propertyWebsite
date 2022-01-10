@@ -1,8 +1,5 @@
 import { makeStyles } from '@mui/styles';
 
-// import { styled } from '@mui/material/styles';
-// import DropDownMenu from './DropDownMenu';
-
 export const useStyles = makeStyles({
   dropdownBtn: {
     color: 'white',
@@ -22,22 +19,3 @@ export const useStyles = makeStyles({
     },
   },
 });
-
-// export const BootstrapDropDownMenu = styled(DropDownMenu)({
-//   'MuiButton-root': {
-//     color: 'black',
-//     padding: 0,
-//     '&:hover': {
-//       color: 'red',
-//     },
-//   },
-//   'MuiPapper-root': {
-//     '& ul': {
-//       backgroundColor: 'black',
-//       color: 'white',
-//     },
-//     '& ul > li:hover': {
-//       color: 'red',
-//     },
-//   },
-// });

@@ -27,11 +27,6 @@ function Contact() {
             src="https://www.google.com/maps/embed/v1/place?q=islamabad&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
         </Box>
-        {/* <Box className={contactusBtnContanier}>
-          <Button variant="contained" size="large" className={contactusBtn}>
-            CONTACT US
-          </Button>
-        </Box> */}
         <ContactForm />
       </Box>
     </div>
