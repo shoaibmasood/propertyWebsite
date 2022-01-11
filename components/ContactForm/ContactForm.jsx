@@ -9,7 +9,8 @@ import {
   TextareaAutosize,
 } from '@mui/material';
 
-// import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
+
 import { useStyles } from './ContactFrom.styles';
 
 function ContactForm() {
@@ -31,25 +32,27 @@ function ContactForm() {
     contactFormBtnContainer,
   } = useStyles();
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   try {
-  //     //owner
-  //     const response = await emailjs.sendForm(
-  //       'service_dk9v2q6',
-  //       'template_scap6yg',
-  //       e.target,
-  //       'user_vJSBiK0h8lCm8r6DxuHCv'
-  //     );
+    try {
+      const response = await emailjs.sendForm(
+        'service_5yv0gvu',
+        'template_rnj48he',
+        e.target,
+        'user_Udn6QBK0jt7OlWPIH5LRT'
+      );
 
-  //     if (response.status === 200) {
-  //       console.log('succesfully sent');
-  //     }
-  //   } catch (error) {
-  //     console.log('error', error);
-  //   }
-  // };
+      if (response.status === 200) {
+        console.log('succesfully sent');
+
+        //closing Form after Sucessfull submission
+        setState(false);
+      }
+    } catch (error) {
+      console.log('error', error);
+    }
+  };
 
   return (
     <Box className={contactusBtnContanier}>
@@ -79,7 +82,7 @@ function ContactForm() {
 
           <Box className={contactFormContainer}>
             <form
-              // onSubmit={handleSubmit}
+              onSubmit={handleSubmit}
               style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -129,13 +132,12 @@ function ContactForm() {
                 variant="outlined"
                 size="small"
                 type="tel"
-                name="phoneNumber"
+                name="customerPhoneNumber"
                 label="Phone"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
               />
               <TextField
-                required
                 id="outlined-size-small"
                 margin="normal"
                 variant="outlined"
@@ -152,6 +154,7 @@ function ContactForm() {
                 name="message"
                 minRows={9}
                 value={message}
+                name="customerMessage"
                 onChange={(e) => setMessage(e.target.value)}
               />
 
