@@ -2,7 +2,6 @@ import { makeStyles } from '@mui/styles';
 
 export const useStyles = makeStyles({
   appbar: {
-    // background: 'rgba(0,0,0,0.1)',
     backgroundColor: 'rgba(0,0,0,0.1)',
     position: 'absolute',
     zIndex: 555,
@@ -15,6 +14,9 @@ export const useStyles = makeStyles({
     },
     '@media screen and (min-width: 1400px)': {
       justifyContent: 'center',
+    },
+    '@media screen and (max-width: 430px)': {
+      flexDirection: 'column',
     },
   },
 
@@ -32,6 +34,12 @@ export const useStyles = makeStyles({
 
     '@media screen and (min-width: 768px)': {
       justifyContent: 'space-evenly',
+    },
+    '@media screen and (max-width: 430px)': {
+      flexWrap: 'wrap',
+      '& a': {
+        marginRight: '18px',
+      },
     },
     '& a:hover': {
       color: 'red',

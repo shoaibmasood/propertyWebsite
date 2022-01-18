@@ -1,5 +1,6 @@
 import { Box, Button } from '@mui/material';
 import React from 'react';
+import ContactForm from '../../components/ContactForm/ContactForm';
 import { useStyles } from './contactus.style';
 
 function Contact() {
@@ -26,11 +27,7 @@ function Contact() {
             src="https://www.google.com/maps/embed/v1/place?q=islamabad&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
         </Box>
-        <Box className={contactusBtnContanier}>
-          <Button variant="contained" size="large" className={contactusBtn}>
-            CONTACT US
-          </Button>
-        </Box>
+        <ContactForm />
       </Box>
     </div>
   );

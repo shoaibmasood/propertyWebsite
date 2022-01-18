@@ -1,6 +1,7 @@
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
+import ContactForm from '../../components/ContactForm/ContactForm';
 import data from '../../public/data.json';
 import { useStyles } from './about.style';
 
@@ -143,9 +144,7 @@ function About() {
             {data.aboutUs.desc4}
           </Typography>
         </Box>
-        <Button variant="contained" size="large" className={aboutBtn}>
-          CONTACT US
-        </Button>
+        <ContactForm />
       </Box>
     </div>
   );

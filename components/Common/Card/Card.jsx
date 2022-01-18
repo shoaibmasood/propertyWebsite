@@ -6,12 +6,14 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useStyles } from './Card.styles';
 import Box from '@mui/material/Box';
+import HomeButtons from '../HomeButtons/HomeButtons';
 
 export default function CardComponentWithBackgroundImage({
   cardTitle,
   cardDescription,
   buttonTitle,
   buttonOnClick,
+  route,
 }) {
   const { cardWrapper, cardContentWrapper, cardContent } = useStyles();
   return (
@@ -35,9 +37,9 @@ export default function CardComponentWithBackgroundImage({
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" onClick={buttonOnClick}>
-            {buttonTitle}
-          </Button>
+          <HomeButtons route={route} onClick={buttonOnClick}>
+            LEARN MORE
+          </HomeButtons>
         </CardActions>
       </Box>
     </Card>

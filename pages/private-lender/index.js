@@ -1,13 +1,15 @@
-import { Box, Grid } from '@mui/material';
 import React from 'react';
+import { Box } from '@mui/material';
+import data from '../../public/data.json';
 import { useStyles } from './privatelender.style';
+import ServicesLayout from '../../components/Common/ServicesLayout/ServicesLayout';
 
 function PrivateLender() {
   const { privateLenderBanner } = useStyles();
   return (
     <div>
       <Box className={privateLenderBanner}></Box>
-      <Grid>hello</Grid>
+      <ServicesLayout pageContent={data.services[0]} />
     </div>
   );
 }
