@@ -11,19 +11,9 @@ export const useStyles = makeStyles({
   },
   testimonialSlider: {
     "& .slick-slider": {
-      "@media screen and (max-width: 325px)": {
-        maxWidth: "17rem",
-      },
-      "@media screen and (min-width: 370px)": {
-        maxWidth: "20rem",
-      },
-      "@media screen and (min-width: 700px)": {
-        maxWidth: "35rem",
-      },
-      "@media screen and (min-width: 1020px)": {
-        maxWidth: "48rem",
-      },
+      width: "90%",
     },
+    // maxWidth: '48rem',
   },
   testimonialIcon: {
     display: "flex",
@@ -36,5 +26,18 @@ export const useStyles = makeStyles({
   },
   testimonialContent: {
     marginBottom: "1rem",
+  },
+
+  imgWrapper: {
+    display: "flex",
+    justifyContent: "space-between",
+    "& img": {
+      "&:hover": {
+        transform: "scale(1.25)",
+        transition: "all 1.1s ease",
+
+        border: "solid black",
+      },
+    },
   },
 });
