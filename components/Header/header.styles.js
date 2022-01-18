@@ -15,6 +15,9 @@ export const useStyles = makeStyles({
     '@media screen and (min-width: 1400px)': {
       justifyContent: 'center',
     },
+    '@media screen and (max-width: 430px)': {
+      flexDirection: 'column',
+    },
   },
 
   logoImage: {
@@ -31,6 +34,12 @@ export const useStyles = makeStyles({
 
     '@media screen and (min-width: 768px)': {
       justifyContent: 'space-evenly',
+    },
+    '@media screen and (max-width: 430px)': {
+      flexWrap: 'wrap',
+      '& a': {
+        marginRight: '18px',
+      },
     },
     '& a:hover': {
       color: 'red',
