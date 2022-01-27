@@ -1,8 +1,8 @@
-import { Box } from '@mui/material';
-import React from 'react';
-import ServicesLayout from '../../components/Common/ServicesLayout/ServicesLayout';
-import data from '../../public/data.json';
-import { useStyles } from './sellyourhome.style';
+import { Box } from "@mui/material";
+import React from "react";
+import ServicesLayout from "../../components/Common/ServicesLayout/ServicesLayout";
+import data from "../../public/data.json";
+import { useStyles } from "../../styles/sellyourhome.style";
 
 function SellYourHome() {
   const { sellYourHomeBanner } = useStyles();

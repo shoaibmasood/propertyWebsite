@@ -1,6 +1,6 @@
-import { Box, Grid } from '@mui/material';
-import React from 'react';
-import { useStyles } from './homeforsale.style';
+import { Box, Grid } from "@mui/material";
+import React from "react";
+import { useStyles } from "../../styles/homeforsale.style";
 
 function HomeForSale() {
   const { homeForSaleBanner } = useStyles();

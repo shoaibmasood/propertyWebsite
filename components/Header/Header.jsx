@@ -19,7 +19,7 @@ const Header = ({ pageHeading }) => {
     <AppBar position="static" className={appbar}>
       <Toolbar disableGutters className={toolbar}>
         <Box className={logoImage}>
-          <Image src={Logo} width={250} height={111} />
+          <Image src={Logo} width={250} height={111} alt="logo"/>
         </Box>
         <Box className={headerlink}>
           <Link href="/">HOME</Link>

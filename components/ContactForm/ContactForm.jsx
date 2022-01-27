@@ -154,7 +154,6 @@ function ContactForm() {
                 name="message"
                 minRows={9}
                 value={message}
-                name="customerMessage"
                 onChange={(e) => setMessage(e.target.value)}
               />
 

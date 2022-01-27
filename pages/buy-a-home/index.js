@@ -1,8 +1,8 @@
-import { Box } from '@mui/material';
-import React from 'react';
-import data from '../../public/data.json';
-import ServicesLayout from '../../components/Common/ServicesLayout/ServicesLayout';
-import { useStyles } from './buyahome.style';
+import { Box } from "@mui/material";
+import React from "react";
+import data from "../../public/data.json";
+import ServicesLayout from "../../components/Common/ServicesLayout/ServicesLayout";
+import { useStyles } from "../../styles/buyahome.style";
 
 function BuyaHome() {
   const { buyaHomeBanner } = useStyles();
