@@ -7,7 +7,6 @@ import styles from "../styles/Home.module.css";
 import ParallaxSection from "../components/Common/ParallaxSection/ParallaxSection";
 import Testimonial from "../components/Testimonial/Testimonial";
 import HomeButtons from "../components/Common/HomeButtons/HomeButtons";
-import Projects from "../components/Projects/Projects";
 export default function Home() {
   const settings = {
     dots: true,
@@ -58,7 +57,6 @@ export default function Home() {
       <HomeDetails />
       <ParallaxSection />
       <Testimonial />
-      <Projects />
     </>
   );
 }
