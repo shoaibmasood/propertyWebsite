@@ -2,11 +2,17 @@ import { makeStyles } from '@mui/styles';
 
 export const useStyles = makeStyles({
   cardWrapper: {
-    backgroundImage: `url(
-      "https://www.iconicpropertiesllc.com/app/themes/vivid/assets/img/sell-your-house.jpg"
-    )`,
+    marginBottom: '0.5rem',
+    backgroundImage: ({ imgPath }) => `url(${imgPath})`,
     backgroundPosition: '48% 62%',
-    maxHeight: '400px',
+    minHeight: '22rem',
+
+    '@media screen and (min-width: 1440px)': {
+      maxWidth: 345,
+    },
+    '@media screen and (min-width: 770px)': {
+      maxWidth: 330,
+    },
   },
   cardContentWrapper: {
     background: `rgb(23, 33, 38,0.3)`,
@@ -14,6 +20,10 @@ export const useStyles = makeStyles({
     padding: '20px',
   },
   cardContent: {
+    color: 'white',
+  },
+  cardDesc: {
+    minHeight: '11.5rem',
     color: 'white',
   },
 });

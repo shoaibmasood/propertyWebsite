@@ -1,9 +1,11 @@
 {
   "services": [
     {
+      "id": "1",
       "title": "Sell Your Home",
       "route": "/sell-your-home",
       "pageTitle": "WE WANT TO BUY YOUR HOUSE!",
+      "imgPath": "sell-your-house.jpg",
       "pageDescription": [
         {
           "subHeading": "ANY SIZE. ANY LOCATION. ANY CONDITION.",
@@ -23,14 +25,18 @@
       "description": "As one of the area’s most active homebuyers, we are confident that we can work around your timeline and goals for selling your house. We can make you a fair, cash offer and are willing to buy your house in its as-is condition. We will work hand in hand with you every step of the way to ensure a successful, seamless transaction."
     },
     {
+      "id": "2",
       "title": "Buy A Home",
       "route": "/buy-a-home",
+      "imgPath": "work.jpg",
 
       "description": "We are one of the area’s most active home sellers and, with our large inventory of properties, there’s no doubt that we can work around your timeline and goals for buying your next home. We work hard to ensure that the buying process is straightforward, fast, efficient, and seamless."
     },
     {
+      "id": "3",
       "title": "Private Lending",
       "route": "/private-lending",
+      "imgPath": "work.jpg",
 
       "description": "Learn about becoming a private lender as an alternative way to participate in the real estate market. We buy and sell a large number of properties and are always looking for short-term private lenders who are excited to loan money at attractive rates secured by a mortgage or deed of trust."
     }

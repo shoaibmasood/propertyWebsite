@@ -2,7 +2,6 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useStyles } from './Card.styles';
 import Box from '@mui/material/Box';
@@ -14,10 +13,14 @@ export default function CardComponentWithBackgroundImage({
   buttonTitle,
   buttonOnClick,
   route,
+  imgPath,
 }) {
-  const { cardWrapper, cardContentWrapper, cardContent } = useStyles();
+  const { cardWrapper, cardContentWrapper, cardContent, cardDesc } = useStyles({
+    imgPath,
+  });
+  console.log('test', cardTitle, imgPath);
   return (
-    <Card sx={{ maxWidth: 345 }} className={cardWrapper}>
+    <Card className={cardWrapper}>
       <Box className={cardContentWrapper}>
         <CardContent>
           <Typography
@@ -31,16 +34,16 @@ export default function CardComponentWithBackgroundImage({
           <Typography
             variant="body2"
             color="text.secondary"
-            className={cardContent}
+            className={cardDesc}
           >
             {cardDescription}
           </Typography>
+          <CardActions>
+            <HomeButtons route={route} onClick={buttonOnClick}>
+              LEARN MORE
+            </HomeButtons>
+          </CardActions>
         </CardContent>
-        <CardActions>
-          <HomeButtons route={route} onClick={buttonOnClick}>
-            LEARN MORE
-          </HomeButtons>
-        </CardActions>
       </Box>
     </Card>
   );
